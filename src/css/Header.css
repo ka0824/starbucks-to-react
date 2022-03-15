@@ -1,0 +1,99 @@
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.inner {
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header-box {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    background-color: #F6F5F0;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+.header-box > .inner {
+    height: 120px;    
+}
+
+.header-box .logo {
+    height: 75px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.header-box .sub-menu {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    display: flex;
+}
+
+.header-box .sub-menu ul.menu {
+    font-family: Arial, sans-sarif;
+    display: flex;
+}
+
+.header-box .sub-menu ul.menu li {
+    position: relative;
+    list-style: none;
+}
+
+.header-box .sub-menu ul.menu li::before {
+    content: "";
+    width: 1px;
+    height: 12px;
+    background-color: #e5e5e5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.header-box .sub-menu ul.menu li:first-child::before {
+    display: none;
+}
+
+.header-box .sub-menu ul.menu li a {
+    padding: 11px 16px;
+    display: block;
+    font-size: 13px;
+    color: #656565;
+}
+
+.header-box .sub-menu .search {
+    position: relative;
+    height: 34px;
+}
+
+.header-box .sub-menu .search input {
+    width: 36px;
+    height: inherit;
+    padding: 4px 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+    background-color: #fff;
+    color: #777;
+    font-size: 12px;
+    transition: width .4s;
+}
+
+.header-box .sub-menu .search input:focus {
+    width: 190px;
+    border-color: #669900;
+}
+
